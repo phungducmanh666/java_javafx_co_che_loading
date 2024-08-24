@@ -23,6 +23,6 @@
 
 - Để chạy chương trình java fx bạn phải cài đặt javafx và thêm các thư viện của javafx cho dự án của bạn.
 
-## Demo trên youtube
+## Demo full trên youtube
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/t7HBCZyjEN8/maxresdefault.jpg)](https://www.youtube.com/watch?v=t7HBCZyjEN8)
