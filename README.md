@@ -1,3 +1,6 @@
+## Video demo
+[![Video demo]](https://github.com/user-attachments/assets/2f78c002-f9b2-49ae-8a5c-899256bff152)
+
 ## Nội dung
 
 - Tạo cơ chế hiển thị tạm thời một màn hình loading trong khi đang thực hiện một tác vụ không đồng bộ.
