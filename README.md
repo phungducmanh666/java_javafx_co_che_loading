@@ -1,18 +1,25 @@
-## Getting Started
+## Nội dung
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- Tạo cơ chế hiển thị tạm thời một màn hình loading trong khi đang thực hiện một tác vụ không đồng bộ.
+- màn hình là một đối tượng chứa một đối tượng thuộc lớp Pane của JavaFx các phương thức.
+  - `paint()` để vẽ màn hình.
+  - `loadPaint()` để vẽ màn hình khi thực hiện tác vụ không đồng bộ. ở đây mình vẽ màn hình loading khi thực hiện tác vụ không đồng bộ.
+  - `getLayout()` hàm này trả về layout của màn hình.
+  - `setLoading()` hàm này để thay đổi trạng thái của màn hình, liệu nó có đang loading hay không nếu set là true thì hàm `loadPaint()` sẽ được gọi ngược lại thì hàm `loadPaint()` sẽ được gọi.
 
-## Folder Structure
+## Cấu trúc thư mục
 
-The workspace contains two folders by default, where:
+- `src/app` nơi chứa mã code chính của chương trình.
+  - `App.java` nơi bắt đầu của chương trình.
+  - `screen/Screen.java` lớp cha của tất cả các màn hình trong dự án này.
+  - `screen/home/HomeScreen.java` màn hình chính.
+  - `screen/splash/SplashScreen.java` màn hình loading sẽ được set cho `HomeScreen.java`.
+- `bin` nơi chứa các file `.class` được biên dịch từ các file `.java` trong dự án của bạn.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## lưu ý
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Để chạy chương trình java fx bạn phải cài đặt javafx và thêm các thư viện của javafx cho dự án của bạn.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Demo trên youtube
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/t7HBCZyjEN8/maxresdefault.jpg)](https://www.youtube.com/watch?v=t7HBCZyjEN8)

@@ -7,6 +7,8 @@ import javafx.scene.layout.Pane;
 
 
 // màn hình loading có một progresbar ở giữa màn hình
+// màn hình này giả sử là không có tác vụ không đồng bộ nên không bao giờ cần vẽ màn hình loading cho nó nên
+// hàm loadPaint để trống
 public class SplashScreen extends Screen {
 
     ProgressBar progressBar;
@@ -27,6 +29,7 @@ public class SplashScreen extends Screen {
     public void loadPaint() {
     }
 
+    // phải ghi đè lại hàm getlayout trả m
     @Override
     public Pane getLayout() {
         return this.layout;
